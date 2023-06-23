@@ -36,9 +36,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - run: gh release view ${{inputs.draftTag}}
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Configure git
         run: |
