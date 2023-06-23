@@ -115,5 +115,8 @@ jobs:
             helm-docs -s file -c charts
 
 
+      - uses: stefanzweifel/git-auto-commit-action@v4 
+        with:
+          commit_message: Release ${{ steps.set_version.outputs.version }}
 
 
