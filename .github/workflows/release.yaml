@@ -34,7 +34,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.PAT }} # https://github.com/stefanzweifel/git-auto-commit-action#push-to-protected-branches
           fetch-depth: 0
 
       - run: gh release view ${{inputs.draftTag}}
